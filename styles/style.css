@@ -1,12 +1,16 @@
 @font-face {
-  font-family: 'Nexa';
-  src: local('Nexa Light'), local('NexaLight'), url('nexalight.woff2') format('woff2'), url('nexalight.woff') format('woff'), url('nexalight.ttf') format('truetype');
+  font-family: "Nexa";
+  src: local("Nexa Light"), local("NexaLight"),
+    url("nexalight.woff2") format("woff2"), url("nexalight.woff") format("woff"),
+    url("nexalight.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Nexa';
-  src: local('Nexa Bold'), local('NexaBold'), url('nexabold.woff2') format('woff2'), url('nexabold.woff') format('woff'), url('nexabold.ttf') format('truetype');
+  font-family: "Nexa";
+  src: local("Nexa Bold"), local("NexaBold"),
+    url("nexabold.woff2") format("woff2"), url("nexabold.woff") format("woff"),
+    url("nexabold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
@@ -43,8 +47,8 @@ header {
   align-items: center;
   height: 100%;
   width: 81px;
-  background: #F26C4F;
-  color: #FFFFFF;
+  background: #f26c4f;
+  color: #ffffff;
   font-family: Nexa;
   font-weight: 700;
   font-size: 31px;
@@ -52,16 +56,15 @@ header {
 
 .triangle {
   border-top: 12px solid transparent;
-	border-left: 12px solid #F26C4F;
-	border-bottom: 12px solid transparent;
+  border-left: 12px solid #f26c4f;
+  border-bottom: 12px solid transparent;
 }
 
 .logo-title {
   margin-left: 10px;
   font-family: Nexa;
-  color: #FFFFFF;
-  
-  
+  font-size: 18px;
+  color: #ffffff;
 }
 
 #top-menu-wrap {
@@ -96,12 +99,16 @@ menu {
   height: 100%;
   padding: 0;
   border: none;
-  border-bottom: 5px #FFFFFF00 solid;
+  border-bottom: 5px #ffffff00 solid;
   outline: none;
   background: none;
   cursor: pointer;
   font-size: 12px;
-  color: #FFFFFF;
+  color: #ffffff;
+}
+
+.top-button:hover {
+  border-bottom: 5px #f26c4f solid;
 }
 
 .spacer {
@@ -110,22 +117,71 @@ menu {
   font-size: 12px;
 }
 
-
-.top-button:hover {
-  border-bottom: 5px #F26C4F solid;
-}
-
-
-  
-#search-wrapper {
-  background: gray;
+#content-wrap {
   width: 940px;
-  height: 70px;
+  display: grid;
+  grid-template-rows: 3;
+  grid-template-columns: 3;
 }
 
-/* #content-wrap {
-  display: grid;
-  grid-template-rows: 2;
-  grid-template-columns: 2;
-} */
-''
+#search-wrap {
+  width: 100%;
+  height: 71px;
+  display: flex;
+  align-items: center;
+}
+
+.searchbox {
+  display: flex;
+}
+
+.searchbox input {
+  z-index: 1;
+  height: 44px;
+  width: 300px;
+  padding-left: 10px;
+  border: none;
+  color: #959595;
+  font-size: 12px;
+  font-weight: bold;
+  background: #ffffff;
+  filter: drop-shadow(0.5px 0.5px 0.5px #00000050);
+}
+
+.searchbox input::-moz-placeholder {
+  color: #959595;
+  font-weight: bold;
+  font-size: 12px;
+}
+.searchbox input::-webkit-input-placeholder {
+  color: #959595;
+  font-weight: bold;
+  font-size: 12px;
+}
+.searchbox input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+.searchbox input:focus:-moz-placeholder {
+  color: transparent;
+} /* FF 4-18 */
+.searchbox input:focus::-moz-placeholder {
+  color: transparent;
+} /* FF 19+ */
+.searchbox input:focus:-ms-input-placeholder {
+  color: transparent;
+} /* IE 10+ */
+
+.searchbox button {
+  height: 46px;
+  width: 46px;
+  padding: 4px 0 0 0;
+  margin-left: -46px;
+  z-index: 2;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.searchbox button:before {
+  content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAMAAADX9CSSAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAq1BMVEXybE/////ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE////8GFztGAAAAN3RSTlMAAEWTzORCzwOQt3JRM1p7ybGoJDbG+WZjnyo88xuNpUt424pd52nwVzkS1T+Z9mCHMLpsSHW9uMrqCgAAAAFiS0dEAf8CLd4AAADvSURBVCjPZZJrW8IwDIXTrqwZCjKBKaKijgkK3i/n//8z03XLhuRT+z5JmnNSohg2cQMMXGJNjEhTjzZ8qpwzuQ9PTkfjs4mcMo6cc+B82vSbzYGca56huCCNUJwFboHLDpMxCWANsccikquGs4NnWuL6JnaOZfJmCizpFquYfof7hpsHlOSwPuIlPFVS858/YkMFpkd8C0j+U8uDas3X/s9D51yp/XUe1WXMTubR+Tu+D/OL3pdDzvOgN/gzPuBl7U/w8/Wtx98bP2v/F+0bH5/qP7E4W+Rf+9H3z69oSFj3a3v7tb291/+hQtX9hz8PIR64HOWAtwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOC0wMi0wM1QyMjoyNzozNiswMDowMEibKksAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTgtMDItMDNUMjI6Mjc6MzYrMDA6MDA5xpL3AAAAAElFTkSuQmCC);
+}
