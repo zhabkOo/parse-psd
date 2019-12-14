@@ -212,28 +212,19 @@ menu {
 .twit-but:before {
   content: url(../images/twitter.svg);
   padding-right: 5px;
-  /* width: 200px;
-  height: 200px; */
 }
 
 .face-but:before {
   content: url(../images/facebook.svg);
   padding-right: 3px;
-  /* width: 200px;
-  height: 200px; */
 }
 
 .rss-but:before {
   content: url(../images/rss.svg);
   padding-right: 5px;
-  /* width: 200px;
-  height: 200px; */
 }
 
 .mail-but:before {
   content: url(../images/mail.svg);
   padding-right: 5px;
-
-  /* width: 200px;
-  height: 200px; */
 }
