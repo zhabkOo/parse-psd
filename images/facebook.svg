@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
 	xmlns:xlink="http://www.w3.org/1999/xlink"
-	width="6px" height="13px" viewBox="0 0 6 13">
+	width="13px" height="13px" viewBox="0 0 6 13">
 <filter filterUnits="objectBoundingBox" x="0.00" y="0.00" width="100.00" height="108.33" id="filter0">
 <feGaussianBlur in="SourceAlpha" stdDeviation="0.00" result="dsBlurOut1"/>
 <feFlood flood-color="rgb(255,255,255)" result="dsFloodOut1"/>

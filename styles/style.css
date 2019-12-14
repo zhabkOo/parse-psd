@@ -50,8 +50,8 @@ header {
   background: #f26c4f;
   color: #ffffff;
   font-family: Nexa;
-  font-weight: 700;
-  font-size: 31px;
+  font-weight: bold;
+  font-size: 36px;
 }
 
 .triangle {
@@ -94,7 +94,6 @@ menu {
 }
 
 .top-button {
-  box-sizing: border-box;
   width: 45px;
   height: 100%;
   padding: 0;
@@ -129,6 +128,7 @@ menu {
   height: 71px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .searchbox {
@@ -184,4 +184,56 @@ menu {
 
 .searchbox button:before {
   content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAMAAADX9CSSAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAq1BMVEXybE/////ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE/ybE////8GFztGAAAAN3RSTlMAAEWTzORCzwOQt3JRM1p7ybGoJDbG+WZjnyo88xuNpUt424pd52nwVzkS1T+Z9mCHMLpsSHW9uMrqCgAAAAFiS0dEAf8CLd4AAADvSURBVCjPZZJrW8IwDIXTrqwZCjKBKaKijgkK3i/n//8z03XLhuRT+z5JmnNSohg2cQMMXGJNjEhTjzZ8qpwzuQ9PTkfjs4mcMo6cc+B82vSbzYGca56huCCNUJwFboHLDpMxCWANsccikquGs4NnWuL6JnaOZfJmCizpFquYfof7hpsHlOSwPuIlPFVS858/YkMFpkd8C0j+U8uDas3X/s9D51yp/XUe1WXMTubR+Tu+D/OL3pdDzvOgN/gzPuBl7U/w8/Wtx98bP2v/F+0bH5/qP7E4W+Rf+9H3z69oSFj3a3v7tb291/+hQtX9hz8PIR64HOWAtwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOC0wMi0wM1QyMjoyNzozNiswMDowMEibKksAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTgtMDItMDNUMjI6Mjc6MzYrMDA6MDA5xpL3AAAAAElFTkSuQmCC);
+}
+
+#social-block {
+  display: flex;
+  height: 100%;
+  width: 300px;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.social-button {
+  font-size: 12px;
+  filter: drop-shadow(0px 1px 0px #ffffff);
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+  font-family: "Arial";
+  cursor: pointer;
+  font-size: 12px;
+  color: #8f8f8f;
+}
+
+.twit-but:before {
+  content: url(../images/twitter.svg);
+  padding-right: 5px;
+  /* width: 200px;
+  height: 200px; */
+}
+
+.face-but:before {
+  content: url(../images/facebook.svg);
+  padding-right: 3px;
+  /* width: 200px;
+  height: 200px; */
+}
+
+.rss-but:before {
+  content: url(../images/rss.svg);
+  padding-right: 5px;
+  /* width: 200px;
+  height: 200px; */
+}
+
+.mail-but:before {
+  content: url(../images/mail.svg);
+  padding-right: 5px;
+
+  /* width: 200px;
+  height: 200px; */
 }
